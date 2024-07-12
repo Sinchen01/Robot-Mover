@@ -1,0 +1,87 @@
+Robo mover
+void stoprobot()
+{
+	motor[lm]= motor[rm]=0;//Stop Robot
+	wait1Msec(1000);
+}
+task main()
+{
+	while(SensorValue(li1)>52)
+	{
+		motor[lm]=50;
+		motor[rm]=50;
+	}
+	stoprobot();
+	if (SensorValue[li1]<52)
+		{
+			motor[lm]=00;
+			motor[rm]=50;
+			wait1Msec(1800);
+		}
+	stoprobot();
+	while(SensorValue(li1)>52)
+	{
+		motor[lm]=50;
+		motor[rm]=50;
+	}
+	stoprobot();
+	if (SensorValue[li1]<52)
+		{
+			motor[lm]=50;
+			motor[rm]=00;
+			wait1Msec(1800);
+		}
+	stoprobot();
+		while(SensorValue(li1)>52)
+	{
+		motor[lm]=50;
+		motor[rm]=50;
+	}
+	stoprobot();
+	if (SensorValue[li1]<52)
+		{
+			motor[lm]=00;
+			motor[rm]=50;
+			wait1Msec(1800);
+		}
+	stoprobot();
+	while(SensorValue(li1)>52)
+	{
+		motor[lm]=50;
+		motor[rm]=50;
+	}
+	stoprobot();
+	if (SensorValue[li1]<52)
+		{
+			motor[lm]=50;
+			motor[rm]=00;
+			wait1Msec(1800);
+		}
+	stoprobot();
+		while(SensorValue(li1)>52)
+	{
+		motor[lm]=50;
+		motor[rm]=50;
+	}
+	stoprobot();
+	if (SensorValue[li1]<52)
+		{
+			motor[lm]=00;
+			motor[rm]=50;
+			wait1Msec(1800);
+		}
+	stoprobot();
+	while(SensorValue(li1)>52)
+	{
+		motor[lm]=50;
+		motor[rm]=50;
+	}
+	stoprobot();
+	if (SensorValue[li1]<52)
+		{
+			motor[lm]=50;
+			motor[rm]=00;
+			wait1Msec(1800);
+		}
+	stoprobot();
+}
